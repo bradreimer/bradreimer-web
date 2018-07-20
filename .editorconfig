@@ -15,7 +15,12 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 csharp_new_line_before_open_brace = all
 
-# Build files & strutured data
-[*.{csproj,build,xml,html,cshtml,json}]
+# Web Pages
+[*.cshtml]
+indent_style = space
+indent_size = 2
+
+# Build files and structured data
+[*.{csproj,build}]
 indent_style = space
 indent_size = 2
