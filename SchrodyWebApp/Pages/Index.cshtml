@@ -1,17 +1,60 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Brad Reimer";
 }
 
-<div class="row align-items-center">
-    <div class="col-md-4">
-        <a asp-page="/Schnauzers"><img src="images/banner1.svg" alt="Fletch, Fibs, and all things schnauzer"></a>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/Index.css" />
+</head>
+
+<section class="section">
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card card-image" style="background-image: url(images/fletch_16_9.jpg);">
+                <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                    <div>
+                        <h6 class="pink-text"><i class="fa fa-pie-chart"></i><strong>Schnauzers</strong></h6>
+                        <h3 class="card-title py-3 font-weight-bold"><strong>@@fletchtheschnauzer</strong></h3>
+                        <p class="pb-3">Hi, I’m Fletcher; 1/2 miniature schnauzer, 1/2 poodle. I live near
+                            Vancouver, Canada and I love car rides and my brother @@niblets_of_fiblets!</p>
+                        <a class="btn btn-success btn-rounded" href="https://www.instagram.com/fletchtheschnauzer/">Visit Fletch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card card-image" style="background-image: url(images/fibs_16_9.jpg);">
+                <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                    <div>
+                        <h6 class="green-text"><i class="fa fa-eye"></i><strong>Schnauzers</strong></h6>
+                        <h3 class="card-title py-3 font-weight-bold"><strong>@@niblets_of_fiblets</strong></h3>
+                        <p class="pb-3">Herrrrooowww, Friends! I'm Fibs, and I run this account for my
+                            brother and me, with some help from my mom!</p>
+                        <a class="btn btn-success btn-rounded" href="https://www.instagram.com/niblets_of_fiblets/">Visit Fibs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <a asp-page="/Software"><img src="images/banner2.svg" alt="Software"></a>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/City/6-col/img%20%2847%29.jpg);">
+                <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                    <div>
+                        <h6 class="green-text"><i class="fa fa-eye"></i><strong> Software</strong></h6>
+                        <h3 class="card-title py-3 font-weight-bold"><strong>This is card title</strong></h3>
+                        <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                            optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+                            Odit sed qui, dolorum!</p>
+                        <a class="btn btn-success btn-rounded"><i class="fa fa-clone left"></i> View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div class="col-md-4">
-        <a asp-page="/About"><img src="images/banner3.svg" alt="About"></a>
-    </div>
-</div>
+</section>
