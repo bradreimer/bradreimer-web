@@ -20,6 +20,12 @@ for details on configuring this project to bundle and minify static web assets. 
     background-color: #f5f5f5;
 }
 
+/* Background */
+.index-card-overlay {
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 /* Carousel */
 .carousel-caption p {
