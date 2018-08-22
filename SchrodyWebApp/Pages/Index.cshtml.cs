@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace SchrodyWebApp.Pages
@@ -14,6 +15,8 @@ namespace SchrodyWebApp.Pages
 			public string Details { get; set; }
 			public string Link { get; set; }
 			public string LinkText { get; set; }
+
+			public bool IsAspNetLink => Link.StartsWith("http", StringComparison.Ordinal);
 		}
 
 		public void OnGet()
@@ -38,6 +41,11 @@ namespace SchrodyWebApp.Pages
 				"C# library that draws sequence diagrams in a WPF.",
 				"https://www.github.com/bradreimer/",
 				"View Projects"),
+
+				CreateArticle("images/stan_overlay.jpg", "Miscellaneous", "More Thoughts",
+				@"This is home to any thoughts and ideas of mine that don't fit in the other categories.",
+				"/Misc",
+				"View Posts"),
 			};
 		}
 

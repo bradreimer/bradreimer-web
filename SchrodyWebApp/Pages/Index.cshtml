@@ -19,7 +19,14 @@
                                 <h6><strong>@article.Category</strong></h6>
                                 <h3 class="card-title py-3 font-weight-bold"><strong>@article.Title</strong></h3>
                                 <p class="pb-3">@Html.Raw(article.Details)</p>
-                                <a class="btn btn-success btn-rounded" href="@article.Link">@article.LinkText</a>
+                                @if (article.IsAspNetLink)
+                                {
+                                    <a class="btn btn-success btn-rounded" href="@article.Link">@article.LinkText</a>
+                                }
+                                else
+                                {
+                                    <a class="btn btn-success btn-rounded" asp-page="@article.Link">@article.LinkText</a>
+                                }
                             </div>
                         </div>
                     </div>
