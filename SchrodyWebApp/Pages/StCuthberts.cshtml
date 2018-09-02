@@ -1,0 +1,45 @@
+@page
+@model StCuthbertsModel
+@using SchrodyWebApp.Extensions;
+@{
+    ViewData["Title"] = "Tuning Out Cancer";
+}
+<h2>@ViewData["Title"]</h2>
+
+<div class="container">
+@foreach (var part in @Model.Show.Parts)
+{
+    <h1><span class="badge badge-pill badge-dark">@part.Description</span></h1>
+
+    @foreach (var row in part.Presentations.Split(2))
+    {
+        <div class="row mt-3">
+        @foreach (var presentation in row)
+        {
+            <div class="col-md-6">
+                <div class="media">
+                    <div class="media-left">
+                        <h2><span class="badge badge-pill badge-info">@presentation.Index</span></h2>
+                    </div>
+                    <div class="media-body ml-2">
+                        <h4 class="media-heading text-uppercase m-0">@presentation.Title</h4>
+                        <p class="m-0">@presentation.Name</p>
+                        @if (!string.IsNullOrEmpty(@presentation.Accompanist))
+                        {
+                            <p class="font-weight-light font-italic m-0">Accompanied by @presentation.Accompanist</p>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+        </div>
+    }
+
+    @if (!part.IsLast)
+    {
+        <p>&nbsp;</p>
+        <h1 class="text-center font-weight-light font-italic">Intermission</h1>
+        <p>&nbsp;</p>
+    }
+}
+</div>

@@ -1,0 +1,126 @@
+<Show>
+	<Parts>
+		<Part Description="Part 1">
+			<Presentations>
+				<Presentation>
+					<Name>Gina V., Sarah H., Samantha J.</Name>
+					<Title>Another Op’nin’, Another Show</Title>
+					<Accompanist>Jaimane Joaquin</Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Beth Scott</Name>
+				</Presentation>
+
+				<Presentation>
+					<Name>Melissa Nelson</Name>
+					<Title>Oh! Quand Je Dors</Title>
+					<Accompanist>Jaimane Joaquin</Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Barb B., Fay P., Tony H.</Name>
+					<Title>Play For Me A Simple Melody</Title>
+					<Accompanist>Diana Harvey</Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Christine Reimer</Name>
+					<Title>On My Own </Title>
+					<Accompanist>Diana Harvey</Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Sapna Vimalendiran</Name>
+				</Presentation>
+
+				<Presentation>
+					<Name>Adult Choir</Name>
+					<Title>O Broken Lamb</Title>
+					<Accompanist>Coleen Metcalfe </Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Alumnae Choir</Name>
+				</Presentation>
+
+				<Presentation>
+					<Name>Sarah Houghton</Name>
+					<Title>Second Star to the Right</Title>
+					<Accompanist>Jaimane Joaquin</Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Robert A., Nagasha</Name>
+					<Title>Hallelujah</Title>
+					<Accompanist>Namara</Accompanist>
+				</Presentation>
+			</Presentations>
+		</Part>
+		<Part Description="Part 2">
+			<Presentations>
+				<Presentation>
+					<Name>Tony Houghton</Name>
+					<Title>Bring Him Home</Title>
+					<Accompanist>Coleen Metcalfe</Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Fiona Scot</Name>
+				</Presentation>
+
+				<Presentation>
+					<Name>Ammiel Swamy</Name>
+					<Title>It Is You</Title>
+					<Accompanist>Guitar</Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Gina Visser</Name>
+					<Title>I Hope You Dance</Title>
+					<Accompanist>Jaimane Joaquin</Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Tanis Lamping</Name>
+					<Title>The Cremation of Sam Magee </Title>
+					<Accompanist>Monologue by Robert Service</Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Melissa Nelson</Name>
+					<Title>Maurizio Machella </Title>
+					<Accompanist>Jaimane Joaquin </Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Gina Visser and Christine Reimer</Name>
+					<Title>For Good</Title>
+					<Accompanist>Diana Harvey</Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Youth Choir</Name>
+					<Title>Let the Earth Resound with Praise!</Title>
+					<Accompanist>Coleen Metcalfe</Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Youth Choir</Name>
+					<Title>Nature’s Lullaby</Title>
+					<Accompanist>Coleen Metcalfe</Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Praise Ban</Name>
+					<Title>Trading My Sorrows</Title>
+					<Accompanist>Praise Band</Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Cathy Wilmot</Name>
+				</Presentation>
+			</Presentations>
+		</Part>
+	</Parts>
+</Show>
