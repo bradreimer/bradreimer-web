@@ -22,7 +22,7 @@
 {
     <h1><span class="badge badge-pill badge-dark">@part.Description</span></h1>
 
-    @foreach (var row in part.Presentations.Split(2))
+    @foreach (var row in part.Presentations.SwapRowsAndColumns().ToArray().Split(2))
     {
         <div class="row mt-3">
         @foreach (var presentation in row)
