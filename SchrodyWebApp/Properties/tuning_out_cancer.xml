@@ -42,6 +42,7 @@
 
 				<Presentation>
 					<Name>Alumnae Choir</Name>
+					<Title>Any Dream Will Do</Title>
 				</Presentation>
 
 				<Presentation>
@@ -57,6 +58,7 @@
 
 				<Presentation>
 					<Name>Robert Amissah</Name>
+					<Title>Hallelujah</Title>
 					<Accompanist>Namara Nikojo</Accompanist>
 				</Presentation>
 			</Presentations>
@@ -123,11 +125,6 @@
 				<Presentation>
 					<Name>Praise Band</Name>
 					<Title>Trading My Sorrows</Title>
-					<Accompanist>Praise Band</Accompanist>
-				</Presentation>
-
-				<Presentation>
-					<Name>Cathy Wilmot</Name>
 				</Presentation>
 			</Presentations>
 		</Part>
