@@ -39,18 +39,20 @@
 				<Presentation>
 					<Name>Adult Choir</Name>
 					<Title>O Broken Lamb</Title>
-					<Accompanist>Coleen Metcalfe </Accompanist>
+					<Accompanist>Coleen Metcalfe</Accompanist>
 				</Presentation>
 
 				<Presentation>
 					<Name>Alumnae Choir</Name>
 					<Title>Any Dream Will Do</Title>
+					<Accompanist>Coleen Metcalfe</Accompanist>
 				</Presentation>
 
 				<Presentation>
 					<Name>Sarah Houghton</Name>
 					<Title>Second Star to the Right</Title>
-					<Accompanist>Jaimane Joaquin</Accompanist>
+					<Accompanist>Namara Nikojo</Accompanist>
+					<!-- <Accompanist>Jaimane Joaquin</Accompanist> -->
 				</Presentation>
 
 				<Presentation>
@@ -81,6 +83,7 @@
 				<Presentation>
 					<Name>Kirsten Starr</Name>
 					<Title>Seligkleit</Title>
+					<Accompanist>Coleen Metcalfe</Accompanist>
 				</Presentation>
 
 				<Presentation>

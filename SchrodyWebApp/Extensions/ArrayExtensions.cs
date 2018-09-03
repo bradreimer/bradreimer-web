@@ -23,7 +23,7 @@ namespace SchrodyWebApp.Extensions
 		public static IEnumerable<T> SwapRowsAndColumns<T>(this T[] array)
 		{
 			int len = array.Length;
-			int mid = len / 2;
+			int mid = (len + 1) / 2;
 			for (int i = 0; i < mid; ++i)
 			{
 				yield return array[i];
