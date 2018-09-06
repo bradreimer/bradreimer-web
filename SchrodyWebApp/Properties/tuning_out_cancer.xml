@@ -51,7 +51,7 @@
 				<Presentation>
 					<Name>Sarah Houghton</Name>
 					<Title>Second Star to the Right</Title>
-					<Accompanist>Namara Nikojo</Accompanist>
+					<Accompanist>Namara Nokojo</Accompanist>
 					<!-- <Accompanist>Jaimane Joaquin</Accompanist> -->
 				</Presentation>
 
@@ -63,15 +63,15 @@
 				<Presentation>
 					<Name>Robert Amissah</Name>
 					<Title>Hallelujah</Title>
-					<Accompanist>Namara Nikojo</Accompanist>
+					<Accompanist>Namara Nokojo</Accompanist>
 				</Presentation>
 			</Presentations>
 		</Part>
 		<Part Description="Part 2">
 			<Presentations>
 				<Presentation>
-					<Name>Tony Houghton</Name>
-					<Title>Bring Him Home</Title>
+					<Name>Youth Choir</Name>
+					<Title>Let the Earth Resound with Praise!</Title>
 					<Accompanist>Coleen Metcalfe</Accompanist>
 				</Presentation>
 
@@ -82,8 +82,8 @@
 				</Presentation>
 
 				<Presentation>
-					<Name>Youth Choir</Name>
-					<Title>Let the Earth Resound with Praise!</Title>
+					<Name>Tony Houghton</Name>
+					<Title>Bring Him Home</Title>
 					<Accompanist>Coleen Metcalfe</Accompanist>
 				</Presentation>
 
