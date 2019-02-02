@@ -7,39 +7,40 @@
 
 <div class="jumbotron">
     <h1 class="display-4">@ViewData["Title"]</h1>
-    <p class="lead">A fundraiser and tribute to Jenni Driscoll-Holmes</p>
+    <p class="lead">A fundraiser in support of Jenni Driscoll-Holmes</p>
     <hr class="my-4">
     <p>A preview of the entrance leaflet, built for Christine Reimer.</p>
-    <a class="btn btn-primary btn-lg" href="#inside" role="button">See Inside</a>
+    <a class="btn btn-primary btn-lg" href="#slideshow" role="button">See Photos</a>
+    <a class="btn btn-secondary btn-lg" href="#inside" role="button">See Inside</a>
     <a class="btn btn-secondary btn-lg" href="#front" role="button">See Front</a>
     <a class="btn btn-secondary btn-lg" href="#back" role="button">See Back</a>
 </div>
+
+<h2><a id="slideshow"></a>Event Photos</h2>
+
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/bradreimer/albums/72157700883173934" title="Tuning Out Cancer"><img src="https://farm2.staticflickr.com/1854/44538252402_ab8aff5eed_c.jpg" width="800" height="450" alt="Tuning Out Cancer"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 <h2><a id="inside"></a>Inside</h2>
 
 <div class="container">
 @foreach (var part in @Model.Show.Parts)
 {
-    <h1><span class="badge badge-pill badge-dark">@part.Description</span></h1>
-
-    @foreach (var row in part.Presentations.Split(2))
+    @foreach (var row in part.Presentations.Split(1))
     {
         <div class="row mt-3">
         @foreach (var presentation in row)
         {
-            <div class="col-md-6">
-                <div class="media">
-                    <div class="media-left">
-                        <h2><span class="badge badge-pill badge-info">@presentation.Index</span></h2>
-                    </div>
-                    <div class="media-body ml-2">
-                        <h4 class="media-heading text-uppercase m-0">@presentation.Title</h4>
-                        <p class="m-0">@presentation.Name</p>
-                        @if (!string.IsNullOrEmpty(@presentation.Accompanist))
-                        {
-                            <p class="font-weight-light font-italic m-0">Accompanied by @presentation.Accompanist</p>
-                        }
-                    </div>
+            <div class="media">
+                <div class="media-left">
+                    <h2><span class="badge badge-pill badge-purple-ribbon">@presentation.Index</span></h2>
+                </div>
+                <div class="media-body ml-2">
+                    <h4 class="media-heading text-uppercase m-0">@presentation.Title</h4>
+                    <p class="m-0">@presentation.Name</p>
+                    @if (!string.IsNullOrEmpty(@presentation.Accompanist))
+                    {
+                        <p class="font-weight-light font-italic m-0">Accompanied by @presentation.Accompanist</p>
+                    }
                 </div>
             </div>
         }

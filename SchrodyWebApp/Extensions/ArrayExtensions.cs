@@ -14,11 +14,22 @@ namespace SchrodyWebApp.Extensions
 		/// <returns>An array containing smaller arrays.</returns>
 		public static IEnumerable<IEnumerable<T>> Split<T>(this T[] array, int size)
 		{
-			for (var i = 0; i < (float)array.Length / size; i++)
+			for (var i = 0; i < (float) array.Length / size; i++)
 			{
 				yield return array.Skip(i * size).Take(size);
 			}
 		}
-	}
 
+		public static IEnumerable<T> SwapRowsAndColumns<T>(this T[] array)
+		{
+			int len = array.Length;
+			int mid = (len + 1) / 2;
+			for (int i = 0; i < mid; ++i)
+			{
+				yield return array[i];
+				if (i + mid < len)
+					yield return array[i + mid];
+			}
+		}
+	}
 }

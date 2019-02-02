@@ -3,13 +3,14 @@
 		<Part Description="Part 1">
 			<Presentations>
 				<Presentation>
-					<Name>Gina V., Sarah H., Samantha J.</Name>
+					<Name>Gina Visser, Sarah Houghton, Sam Jesperson</Name>
 					<Title>Another Op’nin’, Another Show</Title>
 					<Accompanist>Jaimane Joaquin</Accompanist>
 				</Presentation>
 
 				<Presentation>
 					<Name>Beth Scott</Name>
+					<Title>Almost There</Title>
 				</Presentation>
 
 				<Presentation>
@@ -19,9 +20,9 @@
 				</Presentation>
 
 				<Presentation>
-					<Name>Barb B., Fay P., Tony H.</Name>
+					<Name>Barb Buxton, Fay Pereira, Tony Houghton</Name>
 					<Title>Play For Me A Simple Melody</Title>
-					<Accompanist>Diana Harvey</Accompanist>
+					<!-- <Accompanist>Diana Harvey</Accompanist> -->
 				</Presentation>
 
 				<Presentation>
@@ -32,22 +33,31 @@
 
 				<Presentation>
 					<Name>Sapna Vimalendiran</Name>
+					<Title>Bharatanatyam Fusion of Billie Jean</Title>
 				</Presentation>
 
 				<Presentation>
 					<Name>Adult Choir</Name>
 					<Title>O Broken Lamb</Title>
-					<Accompanist>Coleen Metcalfe </Accompanist>
+					<Accompanist>Coleen Metcalfe</Accompanist>
 				</Presentation>
 
 				<Presentation>
-					<Name>Alumnae Choir</Name>
+					<Name>Alumni Choir</Name>
+					<Title>Any Dream Will Do</Title>
+					<Accompanist>Diana Harvey</Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Sam Jesperson</Name>
+					<Title>Colours of the Wind</Title>
 				</Presentation>
 
 				<Presentation>
 					<Name>Sarah Houghton</Name>
 					<Title>Second Star to the Right</Title>
-					<Accompanist>Jaimane Joaquin</Accompanist>
+					<Accompanist>Namara Nkojo</Accompanist>
+					<!-- <Accompanist>Jaimane Joaquin</Accompanist> -->
 				</Presentation>
 
 				<Presentation>
@@ -57,12 +67,30 @@
 
 				<Presentation>
 					<Name>Robert Amissah</Name>
-					<Accompanist>Namara Nikojo</Accompanist>
+					<Title>Hallelujah</Title>
+					<Accompanist>Namara Nkojo</Accompanist>
+				</Presentation>
+
+				<Presentation>
+					<Name>Youth Choir</Name>
+					<Title>Let the Earth Resound with Praise!</Title>
+					<Accompanist>Coleen Metcalfe</Accompanist>
 				</Presentation>
 			</Presentations>
 		</Part>
 		<Part Description="Part 2">
 			<Presentations>
+				<Presentation>
+					<Name>Jaimane Joaquin</Name>
+					<Title>Bring A Torch Jeanette Isabella</Title>
+				</Presentation>
+
+				<Presentation>
+					<Name>Youth Choir and Alumni</Name>
+					<Title>Praise the Lord our God Forever</Title>
+					<Accompanist>Coleen Metcalfe</Accompanist>
+				</Presentation>
+
 				<Presentation>
 					<Name>Tony Houghton</Name>
 					<Title>Bring Him Home</Title>
@@ -70,18 +98,25 @@
 				</Presentation>
 
 				<Presentation>
-					<Name>Fiona Scot</Name>
+					<Name>Fiona Scott</Name>
+					<Title>To Build A Home</Title>
+				</Presentation>
+
+				<Presentation>
+					<Name>Paul Woehrle</Name>
+					<Title>Gooey Duck Song</Title>
 				</Presentation>
 
 				<Presentation>
 					<Name>Kirsten Starr</Name>
 					<Title>Seligkleit</Title>
+					<Accompanist>Coleen Metcalfe</Accompanist>
 				</Presentation>
 
 				<Presentation>
 					<Name>Ammiel Swamy</Name>
 					<Title>It Is You</Title>
-					<Accompanist>Guitar</Accompanist>
+					<Accompanist>Sera Swamy</Accompanist>
 				</Presentation>
 
 				<Presentation>
@@ -92,26 +127,19 @@
 
 				<Presentation>
 					<Name>Tanis Lamping</Name>
-					<Title>The Cremation of Sam Magee </Title>
-					<Accompanist>Monologue by Robert Service</Accompanist>
+					<Title>The Cremation of Sam Magee</Title>
 				</Presentation>
 
 				<Presentation>
 					<Name>Melissa Nelson</Name>
-					<Title>Maurizio Machella </Title>
+					<Title>S’Altro che lacrime</Title>
 					<Accompanist>Jaimane Joaquin </Accompanist>
 				</Presentation>
 
 				<Presentation>
 					<Name>Gina Visser and Christine Reimer</Name>
 					<Title>For Good</Title>
-					<Accompanist>Diana Harvey</Accompanist>
-				</Presentation>
-
-				<Presentation>
-					<Name>Youth Choir</Name>
-					<Title>Let the Earth Resound with Praise!</Title>
-					<Accompanist>Coleen Metcalfe</Accompanist>
+					<!-- <Accompanist>Diana Harvey</Accompanist> -->
 				</Presentation>
 
 				<Presentation>
@@ -123,11 +151,6 @@
 				<Presentation>
 					<Name>Praise Band</Name>
 					<Title>Trading My Sorrows</Title>
-					<Accompanist>Praise Band</Accompanist>
-				</Presentation>
-
-				<Presentation>
-					<Name>Cathy Wilmot</Name>
 				</Presentation>
 			</Presentations>
 		</Part>
