@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller Uri="http://bradreimer.azurewebsites.net/downloads/SandosWpfPackage.appinstaller/SandosWpfPackage.appinstaller" Version="1.0.1.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+  <MainBundle Name="2dc0d657-824a-4e13-b878-b8e0bf498bfa" Version="1.0.1.0" Publisher="CN=breimer" Uri="http://bradreimer.azurewebsites.net/downloads/SandosWpfPackage.appinstaller/SandosWpfPackage_1.0.1.0_Test/SandosWpfPackage_1.0.1.0_AnyCPU.msixbundle" />
+  <UpdateSettings>
+    <OnLaunch HoursBetweenUpdateChecks="0" />
+  </UpdateSettings>
+</AppInstaller>
