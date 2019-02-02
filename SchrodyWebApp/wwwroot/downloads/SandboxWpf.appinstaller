@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AppInstaller
+    Uri="http://bradreimer.azurewebsites.net/downloads/SandboxWpf.appinstaller"
+    xmlns="http://schemas.microsoft.com/appx/appinstaller/2018">
+
+    <MainBundle
+        Uri="http://bradreimer.azurewebsites.net/downloads/SandboxWpf_1.0.0.0_x64__2j1rvv2fpeqdt.msix"
+        Version="1.0.0.0"
+        Publisher="CN=STORMTROOPER\breimer"
+        Name="SandboxWpf"/>
+
+    <UpdateSettings>
+    </UpdateSettings>
+
+</AppInstaller>
