@@ -8,8 +8,4 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Include="Properties\tuning_out_cancer.xml" />
-  </ItemGroup>
-
 </Project>
