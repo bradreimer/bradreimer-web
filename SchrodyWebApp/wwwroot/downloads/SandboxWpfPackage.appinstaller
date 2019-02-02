@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AppInstaller Uri="http://bradreimer.azurewebsites.net/downloads/SandboxWpfPackage.appinstaller" Version="1.0.2.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
-  <MainBundle Name="a66f9a2e-65df-4f68-91f2-3a6bb537b659" Version="1.0.2.0" Publisher="CN=breimer" Uri="http://bradreimer.azurewebsites.net/downloads/SandboxWpfPackage_1.0.2.0_Test/SandboxWpfPackage_1.0.2.0_x64.msixbundle" />
+  <MainBundle Name="a66f9a2e-65df-4f68-91f2-3a6bb537b659" Version="1.0.1.0" Publisher="CN=breimer" Uri="http://bradreimer.azurewebsites.net/downloads/SandboxWpfPackage_1.0.1.0_Test/SandboxWpfPackage_1.0.1.0_x64.msixbundle" />
   <UpdateSettings>
     <OnLaunch HoursBetweenUpdateChecks="0" />
   </UpdateSettings>
