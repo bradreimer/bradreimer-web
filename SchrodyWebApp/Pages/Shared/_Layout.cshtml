@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SchrodyWebApp</title>
+    <title>@ViewData["Title"] | Schnauzers and Software</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -27,7 +27,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-page="/Index" class="navbar-brand">SchrodyWebApp</a>
+                <a asp-page="/Index" class="navbar navbar-expand-lg navbar-light bg-light">
+                    <img src="images/logo_dark.svg" width="30" height="30" class="d-inline-block align-top">
+                    Brad Reimer
+                </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -45,7 +48,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2019 - SchrodyWebApp</p>
+            <p>&copy; 2018-2019 Brad Reimer. All Rights Reserved</p>
         </footer>
     </div>
 
