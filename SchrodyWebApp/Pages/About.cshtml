@@ -1,9 +1,40 @@
-﻿@page
+@page
 @model AboutModel
 @{
     ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <h1 class="text-primary"><b>Brad Reimer</b></h1>
+            <h4>Senior Software Engineer</h4>
+            <div class="card border-primary mb-3">
+                <h5 class="card-header text-primary"><img src="images/experience.svg" width="30" height="30" class="mr-3" />Experience</h5>
+                <div class="card-body">
+                    <h6 class="card-title">Senior Software Engineer</h6>
+                    <ul class="card-text">
+                        <li>Product owner of the Frostbite Editor Framework team</li>
+                    </ul>
+                    <p class="card-text"><small class="text-muted">2003-Present | Electronic Arts</small></p>
+                </div>
+            </div>
+            <div class="card border-primary mb-3">
+                <h5 class="card-header text-primary"><img src="images/education.svg" width="30" height="30" class="mr-3" />Education</h5>
+                <div class="card-body">
+                    <p class="card-text">B.S. Combined Physics &amp; Computer Science</p>
+                    <p class="card-text"><small class="text-muted">1998-2003 | University of British Columbia</small></p>
+                </div>
+            </div>
+            <div class="card border-primary mb-3">
+                <h5 class="card-header text-primary"><img src="images/skills.svg" width="30" height="30" class="mr-3" />Skills</h5>
+                <div class="card-body">
+                    <p class="card-text">Creating tools, usually in C# with WPF</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <img src="images/breimer_profile.jpg"/>
+        </div>
+    </div>
+</div>

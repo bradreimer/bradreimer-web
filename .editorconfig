@@ -21,7 +21,7 @@ indent_style = space
 indent_size = 4
 
 # Build files and structured data
-[*.{csproj,build;js;json}]
+[*.{csproj,buildf,js,json}]
 indent_style = space
 indent_size = 2
 
