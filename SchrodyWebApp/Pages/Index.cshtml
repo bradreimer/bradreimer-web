@@ -1,37 +1,10 @@
 @page
 @model IndexModel
-@using SchrodyWebApp.Extensions;
 @{
-    ViewData["Title"] = "Brad Reimer";
+    ViewData["Title"] = "Home page";
 }
 
-<section class="section">
-    <div class="container-fluid">
-        <!-- Split into two articles per row -->
-        @foreach (var row in @Model.Articles.Split(2))
-        {
-            <div class="row">
-                @foreach (var article in row)
-                {
-                    <div class="col-sm-6 mb-4">
-                        <div class="card card-img text-light bg-dark text-right index-card-overlay" style="background-image: url(@article.ImageSource);">
-                            <div class="py-5 px-4">
-                                <h6><strong>@article.Category</strong></h6>
-                                <h3 class="card-title py-3 font-weight-bold"><strong>@article.Title</strong></h3>
-                                <p class="pb-3">@Html.Raw(article.Details)</p>
-                                @if (article.IsAspNetLink)
-                                {
-                                    <a class="btn btn-success btn-rounded" href="@article.Link">@article.LinkText</a>
-                                }
-                                else
-                                {
-                                    <a class="btn btn-success btn-rounded" asp-page="@article.Link">@article.LinkText</a>
-                                }
-                            </div>
-                        </div>
-                    </div>
-                }
-            </div>
-        }
-    </div>
-</section>
+<div class="jumbotron">
+    <h1>ASP.NET in Azure!</h1>
+    <p class="lead">This is a simple app that we’ve built that demonstrates how to deploy a .NET app to Azure App Service.</p>
+</div>

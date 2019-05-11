@@ -17,16 +17,8 @@ namespace SchrodyWebApp
 			CreateWebHostBuilder(args).Build().Run();
 		}
 
-		public static IWebHostBuilder CreateWebHostBuilder(string[] args)
-		{
-			var config = new ConfigurationBuilder()
-				.AddJsonFile("appsettings.json", optional : true)
-				.AddCommandLine(args)
-				.Build();
-
-			return WebHost.CreateDefaultBuilder(args)
-				.UseConfiguration(config)
+		public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+			WebHost.CreateDefaultBuilder(args)
 				.UseStartup<Startup>();
-		}
 	}
 }
