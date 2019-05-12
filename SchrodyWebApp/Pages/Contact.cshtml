@@ -1,19 +1,84 @@
-﻿@page
+@page
 @model ContactModel
 @{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "Contact Me";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<div class="box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="box-part text-center">
+                    <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+                    <div class="title">
+                        <h4>Instagram</h4>
+                    </div>
+
+                    <div class="text">
+                        <span>Follow <a href="https://www.instagram.com/breimer/">@@breimer</a> or <a href="https://www.instagram.com/fletchtheschnauzer/">@@fletchtheschnauzer</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="box-part text-center">
+                    <i class="fab fa-twitter fa-3x" aria-hidden="true"></i>
+
+                    <div class="title">
+                        <h4>Twitter</h4>
+                    </div>
+
+                    <div class="text">
+                        <span>Tweet <a href="https://twitter.com/bradreimer">@@bradreimer</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="box-part text-center">
+                    <i class="fab fa-facebook fa-3x" aria-hidden="true"></i>
+
+                    <div class="title">
+                        <h4>Facebook</h4>
+                    </div>
+
+                    <div class="text">
+                        <span>
+                            Reach me <a href="https://www.facebook.com/schrody">here</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="box-part text-center">
+                    <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
+
+                    <div class="title">
+                        <h4>LinkedIn</h4>
+                    </div>
+
+                    <div class="text">
+                        <span>Connect to me <a href="https://www.linkedin.com/in/breimer/">here</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="box-part text-center">
+                    <i class="fab fa-github fa-3x" aria-hidden="true"></i>
+
+                    <div class="title">
+                        <h4>GitHub</h4>
+                    </div>
+
+                    <div class="text">
+                        <span>Share some code with me <a href="https://github.com/bradreimer">here</a></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

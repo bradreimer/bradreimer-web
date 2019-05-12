@@ -44,7 +44,7 @@ namespace SchrodyWebApp
 			}
 			else
 			{
-				app.UseExceptionHandler("/Error");
+				app.UseExceptionHandler("/Index");
 				app.UseHsts();
 			}
 
