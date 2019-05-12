@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] | Schnauzers &amp; Software</title>
+    <title>@ViewData["Title"] - Schnauzers &amp; Software</title>
     @await Html.PartialAsync("_Favicons")
 
     <environment include="Development">
@@ -19,6 +19,7 @@
     </environment>
 </head>
 <body>
+    <!--
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="~/images/brand/bradreimer-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -29,12 +30,42 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" asp-page="/Index">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" asp-page="/Index">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" asp-page="/About">About</a>
                 <a class="nav-item nav-link" asp-page="/Contact">Contact</a>
             </div>
         </div>
     </nav>
+        -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="~/images/brand/bradreimer-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                Schnauzers &amp; Software
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item @PageModelExtensions.ActiveNavItemHtml(Model, "Home")">
+                        <a class="nav-link" asp-page="/Index">Home</a>
+                    </li>
+                    <li class="nav-item @PageModelExtensions.ActiveNavItemHtml(Model, "About")">
+                        <a class="nav-link" asp-page="/About">About</a>
+                    </li>
+                    <li class="nav-item @PageModelExtensions.ActiveNavItemHtml(Model, "Services")">
+                        <a class="nav-link" asp-page="/Index">Services</a>
+                    </li>
+                    <li class="nav-item @PageModelExtensions.ActiveNavItemHtml(Model, "Contact")">
+                        <a class="nav-link" asp-page="/Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br />
 
     <partial name="_CookieConsentPartial" />
 
