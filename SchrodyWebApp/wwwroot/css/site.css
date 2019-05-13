@@ -44,50 +44,48 @@ header.masthead {
     }
 
 /* Social media icons */
-.fa-facebook.social-media {
-    background: #3B5998;
-    color: white;
+.social-media {
 }
 
-.fa-twitter.social-media {
-    background: #55ACEE;
-    color: white;
-}
+    .social-media.fa-facebook {
+        background: white;
+        color: #3B5998;
+    }
 
-.fa-linkedin.social-media {
-    background: #007bb5;
-    color: white;
-}
+    .social-media.fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
 
-.fa-youtube.social-media {
-    background: #bb0000;
-    color: white;
-}
+    .social-media.fa-linkedin {
+        background: white;
+        color: #007bb5;
+    }
 
-.fa-instagram.social-media {
-    background: #125688;
-    color: white;
-}
+    .social-media.fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
 
-.fa-flickr.social-media {
-    background: #f40083;
-    color: white;
-}
+    .social-media.fa-instagram {
+        background: white;
+        color: black;
+    }
 
-.fa-yahoo.social-media {
-    background: #430297;
-    color: white;
-}
+    .social-media.fa-flickr {
+        background: #f40083;
+        color: white;
+    }
 
-.fa-reddit.social-media {
-    background: #ff5700;
-    color: white;
-}
+    .social-media.fa-reddit {
+        background: #ff5700;
+        color: white;
+    }
 
-.fa-rss.social-media {
-    background: #ff6600;
-    color: white;
-}
+    .social-media.fa-github {
+        background: #fff;
+        color: black;
+    }
 
 /* QR code generator */
 #qrCode {

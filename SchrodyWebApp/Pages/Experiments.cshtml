@@ -1,0 +1,39 @@
+@page
+@model ExperimentsModel
+@{
+    ViewData["Title"] = "Experiments";
+}
+
+<br />
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Welcome! Bienvenue! Välkommen!</h1>
+        <p class="lead">This page contains my latest experiments in software development.</p>
+    </div>
+</div>
+
+@foreach (var item in Model.Items)
+{
+    <div class="card bg-dark text-white mb-4">
+        @if (item.IsUnderDevelopment)
+        {
+            <div class="card-header bg-warning">
+                <i class="far fa-lightbulb"></i>
+                Under Development
+            </div>
+        }
+        <img class="card-img" src="@item.PreviewImage" alt="Preview Image" />
+        <div class="card-body">
+            <h4 class="card-title">@item.Title</h4>
+            <p class="card-text">@item.Text</p>
+            @if (!item.IsUnderDevelopment)
+            {
+                <a href="#" class="btn btn-primary">Try it Now &raquo;</a>
+            }
+        </div>
+        <div class="card-footer text-muted">
+            Posted on @item.Timestamp.ToString("MMM dd, yyyy")
+        </div>
+    </div>
+}
