@@ -75,12 +75,16 @@ body {
     padding-right: 20px;
 }
 
+/* Allow content to become full screen */
+.full-screen {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
 /* Define our home page header */
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 72px);
-    margin-left: -20px;
-    margin-right: -20px;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../images/bg-masthead-1920x1080.jpg");
     background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../images/bg-masthead-1920x1080.jpg");
     background-position: center;
