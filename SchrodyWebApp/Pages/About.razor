@@ -1,16 +1,93 @@
 @page "/about"
+<!-- Contact Me -->
+<section class="py-5">
+    <div class="container-fluid">
+        <h2>Brad Reimer</h2>
+        <h4>Technical Director, Frostbite Editor &amp; Content Framework</h4>
 
-<h1>About</h1>
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-briefcase"></i> Work Experience
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title"><b>Electronic Arts / </b>Technical Director</h6>
+                        <p class="card-text">
+                            I'm currently a <em>technical director</em>, defining and executing on a technical roadmap for the end-to-end content creation experience in our Frostbite Engine.
+                        </p>
+                        <p class="card-text">
+                            Previously I worked as a <em>senior technical product manager</em>, identifying opportunities and steering the roadmap for the end-to-end content creation experience in our Frostbite Engine.
+                        </p>
+                        <p class="card-text">
+                            Before that I worked as a <em>senior software engineer</em> devloping central tools and technology.
+                            <ul>
+                                <li>Creating the content database used across EA</li>
+                                <li>Developing reusable patterns and components for editors</li>
+                                <li>Creating animation editor experience like an interactive 3D scene, live edit, replay buffer, and streaming diagnostics</li>
+                                <li>Maintaining a propriatary 3D file format and the ecosystem of import, export, and scripting tools that surround it</li>
+                            </ul>
+                        </p>
+                        <p><small class="text-muted text-uppercase">May 2003 - Present, Vancouver</small></p>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <h5 class="card-header">
+                        <i class="fas fa-university"></i> Education
+                    </h5>
+                    <div class="card-body">
+                        <h6 class="card-title"><b>University of British Columbia</b></h6>
+                        <p class="card-text">B.S. Combined Physics &amp; Computer Science</p>
+                        <p class="card-text"><small class="text-muted text-uppercase">Sept 1998 - May 2003, Vancouver</small></p>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <h5 class="card-header">
+                        <i class="fas fa-puzzle-piece"></i> Skills
+                    </h5>
+                    <div class="card-body">
+                        <p class="card-text"><b>Software Developer:</b> C# &bull; C++ &bull; WPF &bull; SQL</p>
+                        <p class="card-text"><b>Analytics:</b> Power BI &bull; Azure App Insights</p>
+                        <p />
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <img src="images/breimer_profile.jpg" class="rounded-circle" />
+            </div>
+        </div>
 
-<p>Current count: @currentCount</p>
+        <br/>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+        <h2 class="font-weight-light">Contact Me</h2>
+        <p>Say hello with social media.</p>
 
-@code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-}
+        <div class="row">
+            <div class="col-1">
+                <a href="https://www.instagram.com/breimer/">
+                    <i class="social-media fab fa-instagram fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col-1">
+                <a href="https://twitter.com/bradreimer">
+                    <i class="social-media fab fa-twitter fa-3x p-2" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col-1">
+                <a href="https://www.facebook.com/schrody">
+                    <i class="social-media fab fa-facebook fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col-1">
+                <a href="https://www.linkedin.com/in/breimer/">
+                    <i class="social-media fab fa-linkedin fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col-1">
+                <a href="https://github.com/bradreimer">
+                    <i class="social-media fab fa-github fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
