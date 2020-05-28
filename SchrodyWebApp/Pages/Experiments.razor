@@ -1,5 +1,8 @@
 @page "/experiments"
 
+@using SchrodyWebApp.Data
+@inject HelloDogsService HelloDogsService
+
 <div class="jumbotron jumbotron-fluid full-screen">
     <div class="container">
         <h1 class="display-4">Welcome! Bienvenue! Välkommen!</h1>
@@ -7,15 +10,32 @@
     </div>
 </div>
 
-<p>Current count: @currentCount</p>
+<p>Hello Fibs: @fibsCount</p>
+<p>Hello Fletch: @fletchCount</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button class="btn btn-primary" @onclick="IncrementFibsAsync">Hello Fibs</button>
+<button class="btn btn-primary" @onclick="IncrementFletchAsync">Hello Fletch</button>
 
 @code {
-    private int currentCount = 0;
+    private int fibsCount;
+    private int fletchCount;
 
-    private void IncrementCount()
+    protected override async Task OnInitializedAsync()
     {
-        currentCount++;
+        var value = await HelloDogsService.GetHelloDogsAsync();
+        fibsCount = value.FibsCount;
+        fletchCount = value.FletchCount;
+    }
+
+    private async Task IncrementFibsAsync()
+    {
+        fibsCount++;
+        await HelloDogsService.IncrementFibsAsync();
+    }
+
+    private async Task IncrementFletchAsync()
+    {
+        fletchCount++;
+        await HelloDogsService.IncrementFletchAsync();
     }
 }
