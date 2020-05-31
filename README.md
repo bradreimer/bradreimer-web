@@ -1,3 +1,3 @@
-## bradreimer.com
+# Brad Reimer
 
-Source for the website https://www.bradreimer.com
+Source for the website https://www.bradreimer.ca
