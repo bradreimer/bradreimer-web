@@ -1,3 +1,6 @@
+@using System.Net.Http
+@inject HttpClient Http
+
 <div class="container">
     <h2 class="font-weight-light" id="Introduction">Woo, Woo, Woof! (Hello!)</h2>
 
@@ -54,15 +57,41 @@
     private int fibsCount;
     private int fletchCount;
 
-    private void IncrementFibs()
+    private class HelloDogsSummary
+    {
+        public int FletchCount { get; set; }
+
+        public int FibsCount { get; set; }
+    }
+
+    private class HelloDogsMessage
+    {
+        public string Name { get; set; }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var summary = await Http.GetFromJsonAsync<HelloDogsSummary>("https://schrody-webapi-dev-as.azurewebsites.net/api/hellodogs/summary");
+
+        fibsCount = summary.FibsCount;
+        fletchCount = summary.FletchCount;
+    }
+
+    private async Task IncrementFibs()
     {
         fibsActive = true;
         fibsCount++;
+
+        await Http.PostAsJsonAsync("https://schrody-webapi-dev-as.azurewebsites.net/api/hellodogs",
+            new HelloDogsMessage { Name = "Fibs" });
     }
 
-    private void IncrementFletch()
+    private async Task IncrementFletch()
     {
         fletchActive = true;
         fletchCount++;
+
+        await Http.PostAsJsonAsync("https://schrody-webapi-dev-as.azurewebsites.net/api/hellodogs",
+            new HelloDogsMessage { Name = "Fletch" });
     }
 }
