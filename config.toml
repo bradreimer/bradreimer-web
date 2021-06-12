@@ -1,3 +1,22 @@
-baseURL = "http://example.org/"
+baseURL = "http://bradreimer.ca/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Brad Reimer | Schnauzers & Software"
+theme = "hugo-story"
+
+## Hugo Built-in Features
+
+disableKinds = ["taxonomy", "taxonomyTerm", "section"]
+# googleAnalytics = "your-google-analytics-id"
+
+## Site Parameters
+
+[Params]
+    description = "Fletcher and Fibonacci's favorite place on the web"
+    logo = "images/banner.jpg"
+    favicon = true
+
+[Params.social]
+    github = "https://github.com/bradreimer/"
+    twitter = "https://twitter.com/bradreimer/"
+    instagram = "https://www.instagram.com/breimer/"
+    linkedin = "https://www.linkedin.com/in/breimer/"
