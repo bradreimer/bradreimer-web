@@ -1,0 +1,11 @@
+####################### Banner #########################
+style: "style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
+title : "Schnauzers & Software"
+subtitle: |
+  FLETCHER AND FIBONACCI'S FAVORITE PLACE ON THE WEB
+content : |
+  Schnauzers & software combines all the great things about schnauzers with all the great things about software development. Fletch and Fibs thank you for visiting and invite you to explore.
+button:
+  label : "Get Started"
+  link : "#first"
+image : "images/banner.jpg"

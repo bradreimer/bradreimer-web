@@ -1,0 +1,10 @@
+####################### Spotlight #########################
+style: "style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+id: "first"
+title : Herrrrooowww, Friends! I'm Fibs
+content: |
+	I run an Instagram account for my brother and me, with some help from my mom!
+button:
+  label: "Visit Fibs on Instagram"
+  link: "https://instagram.com/niblets_of_fiblets/"
+image: "images/fibs_profile.jpg"

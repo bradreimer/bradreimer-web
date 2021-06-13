@@ -1,0 +1,10 @@
+####################### Spotlight #########################
+style: "style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+id: "first"
+title : "Hi, I'm Fletcher"
+content: |
+	I'm 3/4 miniature schnauzer, 1/4 poodle. I live in North Delta, BC, Canada and I love car rides and my brother.
+button:
+  label: "Visit Fletch on Instagram"
+  link: "https://instagram.com/fletchtheschnauzer/"
+image: "images/fletch_profile.jpg"

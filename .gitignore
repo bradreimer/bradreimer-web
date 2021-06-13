@@ -6,3 +6,16 @@ obj/
 
 # VSCode Configuration
 .vs/
+
+# Hugo output directories
+/public
+/resources/_gen/
+
+# OS Files - Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# OS Files - OSX
+.DS_Store

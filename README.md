@@ -1,3 +1,3 @@
-# Brad Reimer
+# Schnauzers & Software
 
-Source for the website https://www.bradreimer.ca
+Source for the website https://bradreimer.ca
