@@ -5,6 +5,6 @@ title : "Hi, I'm Brad Reimer"
 content: |
   And this is my site where I talk about <strong>schnauzers</strong>, <strong>software</strong>, and whatever else I find interesting. Cheers!
 button:
-  label: "Learn More"
-  link: "#"
+  label: "Visit Brad on Instagram"
+  link: "https://www.instagram.com/breimer/"
 image: "images/breimer_profile.jpg"
