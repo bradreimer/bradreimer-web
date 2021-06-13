@@ -20,6 +20,11 @@ csharp_new_line_before_open_brace = all
 indent_style = space
 indent_size = 4
 
+# Structured Data
+[*.yml]
+indent_style = space
+indent_size = 2
+
 # Build files and structured data
 [*.{csproj,build,js,json}]
 indent_style = space

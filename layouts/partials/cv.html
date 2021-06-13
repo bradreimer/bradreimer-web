@@ -1,0 +1,11 @@
+<section class="wrapper style1 align-center">
+    <div class="inner">
+        {{ with .title }}<h2>{{ . }}</h2>{{ end }}
+        {{ with .content }}<p>{{ . | safeHTML }}</p>{{ end }}
+        <div class="index align-left {{ .style }}">
+            {{ range .sections }}
+                {{ partial "cv-section" . }}
+            {{ end }}
+        </div>
+    </div>
+</section>

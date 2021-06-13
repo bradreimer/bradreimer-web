@@ -1,0 +1,8 @@
+<section>
+    <header>
+        {{ with .header }}<h3>{{ . }}</h3>{{ end }}
+    </header>
+    <div class="content">
+        {{ with .content }}  {{ . | safeHTML }}  {{ end }}
+    </div>
+</section>
