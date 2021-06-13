@@ -11,6 +11,10 @@ obj/
 /public
 /resources/_gen/
 
+# Npm
+package-lock.json
+node_modules/
+
 # OS Files - Windows
 Thumbs.db
 ehthumbs.db
