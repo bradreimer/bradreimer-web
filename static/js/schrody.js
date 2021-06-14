@@ -13,7 +13,8 @@ async function sayHello(name) {
       'Content-Type': 'application/json'
     }
   });
-  return await response.text();
+  const text = await response.text();
+  return text
 }
 
 $(function() {
