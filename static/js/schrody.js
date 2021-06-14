@@ -3,21 +3,27 @@
 */
 
 // Increment hello counter
-function sayHello(name) {
-  console.log("Hello: " + name);
-  return 42;
+async function sayHello(name) {
+  const response = await fetch('/api/sayHello', {
+    method: 'POST',
+    body: {
+      'name': name
+    },
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+  return response;
 }
 
 $(function() {
   $("#fletch").on("click", function() {
-    var count = sayHello("Fletch");
-    document.getElementById("fletch").innerHTML = `<strong>Hello human!</strong> ${count} people have said hello to me.`
+    document.getElementById("fletch").innerHTML = await sayHello("Fletch");
     return false;
   });
 
   $("#fibs").on("click", function() {
-    var count = sayHello("Fibs");
-    document.getElementById("fibs").innerHTML = `<strong>Hello human!</strong> ${count} people have said hello to me.`
+    document.getElementById("fibs").innerHTML = await sayHello("Fibs");
     return false;
   });
 })
