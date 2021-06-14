@@ -36,7 +36,7 @@ namespace Schrody
 			};
 
 			string responseMessage =
-				$"<strong>Hello human!</strong> {count} people have said hello to me.";
+				$"<strong>Hello human!</strong> {count} people have said hello to me";
 
             return new OkObjectResult(responseMessage);
         }
