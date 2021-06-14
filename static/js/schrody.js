@@ -4,11 +4,10 @@
 
 // Increment hello counter
 async function sayHello(name) {
+  const body = { name : name };
   const response = await fetch('/api/sayHello', {
     method: 'POST',
-    body: {
-      'name': name
-    },
+    body: JSON.stringify(body),
     headers: {
       'Content-Type': 'application/json'
     }
