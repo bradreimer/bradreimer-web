@@ -1,0 +1,9 @@
+@BaseUrl = www.bradreimer.ca/api
+
+### Say Hello to a Schnauzer
+
+POST https://{{BaseUrl}}/sayHello
+
+{
+    "name": "Brad"
+}
