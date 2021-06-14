@@ -17,12 +17,12 @@ async function sayHello(name) {
 }
 
 $(function() {
-  $("#fletch").on("click", function() {
+  $("#fletch").on("click", async function() {
     document.getElementById("fletch").innerHTML = await sayHello("Fletch");
     return false;
   });
 
-  $("#fibs").on("click", function() {
+  $("#fibs").on("click", async function() {
     document.getElementById("fibs").innerHTML = await sayHello("Fibs");
     return false;
   });
