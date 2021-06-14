@@ -1,4 +1,4 @@
-baseURL = "http://bradreimer.ca/"
+baseURL = "https://www.bradreimer.ca/"
 languageCode = "en-us"
 title = "Brad Reimer | Schnauzers & Software"
 theme = "hugo-story"
