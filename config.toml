@@ -14,6 +14,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
     description = "Fletcher and Fibonacci's favorite place on the web"
     logo = "images/banner.jpg"
     favicon = true
+	custom_js = ["js/schrody.js"]
 
 [Params.social]
     github = "https://github.com/bradreimer/"
