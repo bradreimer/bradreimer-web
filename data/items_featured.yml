@@ -1,6 +1,6 @@
 title : "Featured Builds"
 content: |
-  A few projects that best represent what I am actively exploring right now: practical hardware, AI experiments, and web/API systems.
+  A few projects that best represent what I am actively exploring right now: practical hardware, AI experiments, and web systems.
 style: "style1 medium onscroll-fade-in"
 items:
   - name : "schrody-sensor"
