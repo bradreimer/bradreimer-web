@@ -1,7 +1,7 @@
 {
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/*.{css,svg,js,png,gif,ico,jpg,jpeg}", "/assets/*", "/images/*"]
+    "exclude": ["/*.{css,svg,js,png,gif,ico,jpg,jpeg}", "/_astro/*", "/images/*"]
   },
   "responseOverrides": {
     "400": {

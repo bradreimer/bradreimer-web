@@ -1,0 +1,140 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const featuredProjects = [
+  {
+    name: 'schrody-sensor',
+    description:
+      'Low-power temperature sensor firmware for ESP32-C6 with ESPHome and OpenThread, including docs for setup, pinout, and design decisions.',
+    link: 'https://github.com/bradreimer/schrody-sensor',
+  },
+  {
+    name: 'doorbell_compliment_service',
+    description:
+      'A FastAPI service on Jetson Orin Nano that analyzes doorbell images and generates personalized compliments for Home Assistant workflows.',
+    link: 'https://github.com/bradreimer/doorbell_compliment_service',
+  },
+  {
+    name: 'trmnl-byos-aspnet',
+    description:
+      'An ASP.NET implementation of the TRMNL BYOS server with strongly-typed endpoints, Docker deployment, and Synology-friendly setup.',
+    link: 'https://github.com/bradreimer/trmnl-byos-aspnet',
+  },
+];
+
+const archiveProjects = [
+  {
+    name: 'cs-sequence-diagrams',
+    description: 'A WPF control that generates UML sequence diagrams from plain text input.',
+    link: 'https://github.com/bradreimer/cs-sequence-diagrams',
+  },
+  {
+    name: 'pumpkin-eye',
+    description: 'An Arduino project for animated eyeball movement in a Halloween pumpkin build.',
+    link: 'https://github.com/bradreimer/pumpkin-eye',
+  },
+  {
+    name: 'inkscape_app_icon_generator',
+    description: 'An Inkscape extension for generating app icon sizes quickly.',
+    link: 'https://github.com/bradreimer/inkscape_app_icon_generator',
+  },
+];
+
+import { Image } from 'astro:assets';
+import fletchImg from '../assets/images/fletch_profile.jpg';
+import fibsImg from '../assets/images/fibs_profile.jpg';
+import breimerImg from '../assets/images/breimer_profile.jpg';
+import '../styles/home.css';
+---
+
+<Layout pageTitle="Schnauzers & Software">
+  <div class="home-page page-container">
+    <section class="scholar-hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">A sandbox for dogs, photos, hardware, and code</p>
+        <h1>Schnauzers &amp; Software</h1>
+        <p>
+          This is my personal playground to experiment and share ideas.
+          Expect schnauzers, photography, software experiments, and ESP32 projects.
+        </p>
+        <div class="hero-actions">
+          <a href="#dogs" class="hero-button">Meet Fibs &amp; Fletch</a>
+          <a href="#projects" class="hero-link">Jump to projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="dogs" class="dogs-grid" aria-label="Fibs and Fletch">
+      <article class="dog-card">
+        <div class="media-square">
+          <Image src={fibsImg} alt="Fibs portrait" loading="lazy" class="media-image" />
+        </div>
+        <div class="dog-content">
+          <h2>Herrrrooowww, Friends! I'm Fibs</h2>
+          <p>I run an Instagram account for my brother and me, with some help from my mom!</p>
+          <a href="https://instagram.com/niblets_of_fiblets/" target="_blank" rel="noopener noreferrer">Visit Fibs on Instagram</a>
+        </div>
+      </article>
+
+      <article class="dog-card">
+        <div class="media-square">
+          <Image src={fletchImg} alt="Fletcher portrait" loading="lazy" class="media-image" />
+        </div>
+        <div class="dog-content">
+          <h2>Hi, I'm Fletcher</h2>
+          <p>
+            I'm 3/4 miniature schnauzer, 1/4 poodle. I live in North Delta, BC, Canada and I love
+            car rides and my brother.
+          </p>
+          <a href="https://instagram.com/fletchtheschnauzer/" target="_blank" rel="noopener noreferrer">Visit Fletch on Instagram</a>
+        </div>
+      </article>
+
+      <article class="dog-card dog-card-wide">
+        <div class="media-square">
+          <Image src={breimerImg} alt="Brad Reimer portrait" loading="lazy" class="media-image" />
+        </div>
+        <div class="dog-content">
+          <h2>Hi, I'm Brad Reimer</h2>
+          <p>
+            This site is my sandbox for trying ideas with websites and Azure:
+            <strong>schnauzers</strong>, <strong>photography</strong>, <strong>software</strong>, and
+            <strong>ESP32 controllers</strong>.
+          </p>
+          <a href="https://www.instagram.com/breimer/" target="_blank" rel="noopener noreferrer">Visit Brad on Instagram</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="project-section" id="projects">
+      <h2>Featured Builds</h2>
+      <p class="section-copy">
+        A few projects that best represent what I am actively exploring right now: practical hardware,
+        AI experiments, and web systems.
+      </p>
+      <div class="project-grid">
+        {featuredProjects.map((item) => (
+          <article class="project-card">
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
+            <a href={item.link} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Project Archive</h2>
+      <p class="section-copy">Older projects that still reflect what I enjoy building.</p>
+      <div class="project-grid">
+        {archiveProjects.map((item) => (
+          <article class="project-card">
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
+            <a href={item.link} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
+        ))}
+      </div>
+    </section>
+  </div>
+</Layout>

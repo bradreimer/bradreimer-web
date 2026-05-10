@@ -7,18 +7,12 @@ obj/
 # VSCode Configuration
 .vs/
 
-# Hugo output directories
-/public
-/resources/_gen/
-.hugo_build.lock
-/.output/
+# Astro build output
+/dist/
+/.astro/
 
 # Npm
-package-lock.json
 node_modules/
-
-# .NET test output
-TestResults/
 
 # OS Files - Windows
 Thumbs.db

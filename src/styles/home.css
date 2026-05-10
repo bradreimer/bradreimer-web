@@ -1,0 +1,199 @@
+/* ==========================================================================
+   Home Page (Light Scholar Variant)
+   ========================================================================== */
+
+.home-page {
+    position: relative;
+}
+
+.home-page::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.28;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1400 1400'%3E%3Cg fill='none' stroke='%23b79c86' stroke-width='16' stroke-linecap='round' stroke-linejoin='round' transform='rotate(-30 700 700) translate(100, 100)'%3E%3Cpath d='m1099.2 505.2-1.1992 1.1992c-2.3984 2.3984-6 4.8008-13.199 4.8008-28.801-3.6016-99.602-70.801-140.4-132 14.398 171.6-3.6016 234-20.398 288-21.602 72-39.602 134.4 15.602 416.4 0 4.8008 1.1992 13.199-16.801 18-14.398 4.8008-45.602 7.1992-78 7.1992-44.398 0-102-4.8008-106.8-13.199-16.801-13.199-25.199-97.199-22.801-228 0-24 1.1992-49.199 1.1992-76.801-4.8008 2.3984-12 4.8008-20.398 6-70.801 8.3984-244.8-54-288-106.8-22.805 133.2-82.805 194.4-132 246-43.199 44.398-76.801 79.199-73.199 145.2v2.3984c-3.6016 19.199-66 21.602-92.398 21.602-33.602 0-91.199-2.3984-96-22.801v-1.1992c-4.8008-52.801 122.4-324 162-408 16.801-92.398 42-201.6 85.199-266.4 0-16.801-1.1992-26.398-2.3984-36-1.1992-15.602-2.3984-31.199 2.3984-39.602 3.6016-7.1992 13.199-9.6016 20.398-7.1992 13.199 3.6016 28.801 32.398 42 67.199 68.398 19.199 139.2 36 211.2 36 67.199 0 134.4-14.398 200.4-55.199 6-7.1992 36-58.801 64.801-108 18-30 37.199-63.602 54-91.199 15.602-36 30-67.199 52.801-74.398 9.6016-3.6016 19.199-2.3984 30 3.6016l-1.1992-0.003906 24 21.602 26.398-21.602c10.801-9.6016 21.602-12 30-8.3984 13.199 4.8008 21.602 22.801 25.199 55.199 13.199 9.6016 67.199 46.801 76.801 54 1.1992 1.1992 3.6016 6 2.3984 7.1992 0 3.6016 1.1992 7.1992-31.199 28.801l91.199 62.398c9.6016 2.4023 19.203 8.4023-81.598 204z'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 140px 140px;
+    z-index: -1;
+}
+
+.scholar-hero {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 1.2rem;
+    align-items: end;
+    padding: 1.2rem 0 1.8rem;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.74rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-muted);
+}
+
+.hero-copy h1 {
+    font-size: clamp(2.1rem, 6vw, 4rem);
+    line-height: 1.03;
+    margin-bottom: 0.7rem;
+}
+
+.hero-copy p {
+    margin-bottom: 1rem;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.1rem;
+}
+
+.hero-button {
+    background: var(--color-accent);
+    color: #fff;
+    border-radius: 999px;
+    padding: 0.55rem 0.95rem;
+    font-weight: 600;
+}
+
+.hero-link {
+    font-weight: 600;
+}
+
+.hero-note {
+    border: 1px solid var(--color-border);
+    background: var(--color-bg-alt);
+    border-left: 4px solid var(--color-accent);
+    border-radius: 10px;
+    padding: 0.9rem;
+    font-size: 0.95rem;
+}
+
+.dogs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1rem 0 2.5rem;
+}
+
+.dog-card {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--color-bg);
+    transition: transform var(--transition-standard), box-shadow var(--transition-standard), background-color var(--transition-standard);
+}
+
+@media (hover: hover) {
+    .dog-card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        background: var(--color-bg-alt);
+    }
+}
+
+.dog-card-wide {
+    grid-column: 1 / -1;
+}
+
+.media-square {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    background: var(--color-bg-alt);
+}
+
+.media-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dog-content {
+    padding: 0.95rem 1rem;
+}
+
+.dog-content h2 {
+    font-size: 1.35rem;
+    margin: 0 0 0.6rem;
+    border: none;
+    padding: 0;
+}
+
+.dog-content p {
+    margin-bottom: 0.7rem;
+}
+
+.project-section {
+    margin: 2rem 0;
+}
+
+.section-copy {
+    margin-top: -0.6rem;
+    margin-bottom: 1rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    background: var(--color-bg);
+    padding: 0.95rem;
+    transition: transform var(--transition-standard), box-shadow var(--transition-standard), background-color var(--transition-standard);
+}
+
+@media (hover: hover) {
+    .project-card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        background: var(--color-bg-alt);
+    }
+}
+
+.project-card h3 {
+    margin-bottom: 0.45rem;
+    font-size: 1.05rem;
+}
+
+.project-card p {
+    margin-bottom: 0.7rem;
+    font-size: 0.94rem;
+}
+
+.project-card a {
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 860px) {
+    .scholar-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .dogs-grid,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dog-card {
+        grid-template-columns: 1fr;
+    }
+
+    .media-square {
+        max-width: min(88vw, 360px);
+        margin: 0.9rem auto 0;
+    }
+}
