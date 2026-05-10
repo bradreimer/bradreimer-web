@@ -3,7 +3,7 @@ style: "style1 orient-right content-align-left image-position-center onscroll-im
 id: "first"
 title : "Hi, I'm Brad Reimer"
 content: |
-  And this is my site where I talk about <strong>schnauzers</strong>, <strong>software</strong>, and whatever else I find interesting. Cheers!
+  This site is my sandbox for trying ideas with websites and Azure: <strong>schnauzers</strong>, <strong>photography</strong>, <strong>software</strong>, and <strong>ESP32 controllers</strong>.
 button:
   label: "Visit Brad on Instagram"
   link: "https://www.instagram.com/breimer/"

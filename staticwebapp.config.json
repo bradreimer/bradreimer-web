@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "route": "/api/*"
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/api/*", "/*.{css,svg,js,png,gif,ico,jpg,jpeg}", "/assets/*", "/images/*"]
+  },
+  "misecsBeforeServerTimeout": 60000
+}
