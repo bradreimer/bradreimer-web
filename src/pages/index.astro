@@ -41,6 +41,7 @@ const archiveProjects = [
 ];
 
 import { Image } from 'astro:assets';
+import hermannImg from '../assets/images/hermann_profile.jpg';
 import fletchImg from '../assets/images/fletch_profile.jpg';
 import fibsImg from '../assets/images/fibs_profile.jpg';
 import breimerImg from '../assets/images/breimer_profile.jpg';
@@ -58,13 +59,27 @@ import '../styles/home.css';
           Expect schnauzers, photography, software experiments, and ESP32 projects.
         </p>
         <div class="hero-actions">
-          <a href="#dogs" class="hero-button">Meet Fibs &amp; Fletch</a>
+          <a href="#dogs" class="hero-button">Meet Hermann, Fibs &amp; Fletch</a>
           <a href="#projects" class="hero-link">Jump to projects</a>
         </div>
       </div>
     </section>
 
-    <section id="dogs" class="dogs-grid" aria-label="Fibs and Fletch">
+    <section id="dogs" class="dogs-grid" aria-label="Hermann, Fibs, and Fletch">
+      <article class="dog-card">
+        <div class="media-square">
+          <Image src={hermannImg} alt="Hermann portrait" loading="lazy" class="media-image" />
+        </div>
+        <div class="dog-content">
+          <h2>Hello, I'm Hermann</h2>
+          <p>
+            I'm Fibs' little brother: confident, loud,
+			and always ready for a walk.
+          </p>
+          <a href="https://www.instagram.com/hermann_on_a_mission" target="_blank" rel="noopener noreferrer">Visit Hermann on Instagram</a>
+        </div>
+      </article>
+
       <article class="dog-card">
         <div class="media-square">
           <Image src={fibsImg} alt="Fibs portrait" loading="lazy" class="media-image" />
