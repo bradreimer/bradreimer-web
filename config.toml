@@ -17,7 +17,7 @@ disableKinds = ["taxonomy", "section"]
 ## Site Parameters
 
 [Params]
-    description = "Fletcher and Fibonacci's favorite place on the web"
+    description = "Brad Reimer's web playground for schnauzers, photography, software experiments, and ESP32 projects."
     logo = "images/banner.jpg"
     favicon = true
 	custom_css = ["css/schrody.css"]
@@ -25,6 +25,5 @@ disableKinds = ["taxonomy", "section"]
 
 [Params.social]
     github = "https://github.com/bradreimer/"
-    twitter = "https://twitter.com/bradreimer/"
     instagram = "https://www.instagram.com/breimer/"
     linkedin = "https://www.linkedin.com/in/breimer/"
