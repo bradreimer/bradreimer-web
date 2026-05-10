@@ -4,7 +4,6 @@ id: "first"
 title : "Hi, I'm Fletcher"
 content: |
   I'm 3/4 miniature schnauzer, 1/4 poodle. I live in North Delta, BC, Canada and I love car rides and my brother.
-  <span id="fletch" class="sayHello-link">Say hello to Fletch</span>.
 button:
   label: "Visit Fletch on Instagram"
   link: "https://instagram.com/fletchtheschnauzer/"

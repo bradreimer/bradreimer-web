@@ -4,7 +4,6 @@ id: "first"
 title : Herrrrooowww, Friends! I'm Fibs
 content: |
   I run an Instagram account for my brother and me, with some help from my mom!
-  <span id="fibs" class="sayHello-link">Say hello to Fibs</span>.
 button:
   label: "Visit Fibs on Instagram"
   link: "https://instagram.com/niblets_of_fiblets/"

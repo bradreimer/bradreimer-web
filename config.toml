@@ -20,8 +20,6 @@ disableKinds = ["taxonomy", "section"]
     description = "Brad Reimer's web playground for schnauzers, photography, software experiments, and ESP32 projects."
     logo = "images/banner.jpg"
     favicon = true
-	custom_css = ["css/schrody.css"]
-	custom_js = ["js/schrody.js"]
 
 [Params.social]
     github = "https://github.com/bradreimer/"
