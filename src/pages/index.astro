@@ -40,6 +40,10 @@ const archiveProjects = [
   },
 ];
 
+import { Image } from 'astro:assets';
+import fletchImg from '../assets/images/fletch_profile.jpg';
+import fibsImg from '../assets/images/fibs_profile.jpg';
+import breimerImg from '../assets/images/breimer_profile.jpg';
 import '../styles/home.css';
 ---
 
@@ -63,7 +67,7 @@ import '../styles/home.css';
     <section id="dogs" class="dogs-grid" aria-label="Fibs and Fletch">
       <article class="dog-card">
         <div class="media-square">
-          <img src="/images/fletch_profile.jpg" alt="Fletcher portrait" loading="lazy" class="media-image" />
+          <Image src={fletchImg} alt="Fletcher portrait" loading="lazy" class="media-image" />
         </div>
         <div class="dog-content">
           <h2>Hi, I'm Fletcher</h2>
@@ -77,7 +81,7 @@ import '../styles/home.css';
 
       <article class="dog-card">
         <div class="media-square">
-          <img src="/images/fibs_profile.jpg" alt="Fibs portrait" loading="lazy" class="media-image" />
+          <Image src={fibsImg} alt="Fibs portrait" loading="lazy" class="media-image" />
         </div>
         <div class="dog-content">
           <h2>Herrrrooowww, Friends! I'm Fibs</h2>
@@ -88,7 +92,7 @@ import '../styles/home.css';
 
       <article class="dog-card dog-card-wide">
         <div class="media-square">
-          <img src="/images/breimer_profile.jpg" alt="Brad Reimer portrait" loading="lazy" class="media-image" />
+          <Image src={breimerImg} alt="Brad Reimer portrait" loading="lazy" class="media-image" />
         </div>
         <div class="dog-content">
           <h2>Hi, I'm Brad Reimer</h2>
