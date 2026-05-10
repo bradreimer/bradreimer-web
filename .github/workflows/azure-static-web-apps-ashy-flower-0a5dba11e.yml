@@ -8,6 +8,9 @@ on:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
+permissions:
+  contents: read
+  pull-requests: write
 
 jobs:
   build_and_deploy_job:
@@ -15,9 +18,32 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
-          submodules: true
+          persist-credentials: false
+          submodules: recursive
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.161.1"
+          extended: true
+
+      - name: Restore API dependencies
+        run: dotnet restore api/api.csproj
+
+      - name: Run API tests
+        run: dotnet test api.Tests/api.Tests.csproj -c Release --no-restore
+
+      - name: Publish Azure Functions API
+        run: dotnet publish api/api.csproj -c Release -o .output/api --no-restore
+
+      - name: Build Hugo site
+        run: hugo --gc --minify
+
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -25,11 +51,13 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ASHY_FLOWER_0A5DBA11E }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
+          skip_app_build: true
+          skip_api_build: true
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/" # App source code path
-          api_location: "api" # Api source code path - optional
-          output_location: "public" # Built app content directory - optional
+          app_location: "public" # Built app content directory
+          api_location: ".output/api" # Published Azure Functions API
+          output_location: "" # Not used when builds are skipped
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:

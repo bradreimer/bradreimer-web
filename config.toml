@@ -1,12 +1,18 @@
 baseURL = "https://www.bradreimer.ca/"
-languageCode = "en-us"
 title = "Brad Reimer | Schnauzers & Software"
 theme = "hugo-story"
+defaultContentLanguage = "en"
 
 ## Hugo Built-in Features
 
-disableKinds = ["taxonomy", "taxonomyTerm", "section"]
+disableKinds = ["taxonomy", "section"]
 # googleAnalytics = "your-google-analytics-id"
+
+[languages]
+    [languages.en]
+        label = "English"
+        locale = "en-US"
+        weight = 1
 
 ## Site Parameters
 

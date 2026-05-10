@@ -1,44 +1,36 @@
-using System;
-using System.IO;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.AspNetCore.Http;
+using System.Net;
+using Microsoft.Azure.Functions.Worker;
+using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 
-namespace Schrody
+namespace Schrody;
+
+public sealed class SayHello
 {
-    public static class SayHello
+    private readonly GreetingCounter _counter;
+    private readonly ILogger<SayHello> _logger;
+
+    public SayHello(GreetingCounter counter, ILogger<SayHello> logger)
     {
-		private static int s_fletch;
-		private static int s_fibs;
-		private static int s_brad;
+        _counter = counter;
+        _logger = logger;
+    }
 
-        [FunctionName("SayHello")]
-        public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
-            ILogger log)
-        {
-            string name = req.Query["name"];
+    [Function("SayHello")]
+    public async Task<HttpResponseData> Run(
+        [HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req)
+    {
+        using var reader = new StreamReader(req.Body);
+        string requestBody = await reader.ReadToEndAsync();
 
-            string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-            dynamic data = JsonConvert.DeserializeObject(requestBody);
-            name = name ?? data?.name;
+        string? name = HelloRequestParser.ResolveName(req.Url.Query, requestBody);
+        int count = _counter.IncrementFor(name);
 
-			int count = name switch
-			{
-				"Fletch" => ++s_fletch,
-				"Fibs" => ++s_fibs,
-				"Brad" => ++s_brad,
-				_ => 0
-			};
+        _logger.LogInformation("Processed SayHello for {Name}. Current count is {Count}.", name ?? "<none>", count);
 
-			string responseMessage =
-				$"<strong>Hello human!</strong> {count} people have said hello to me";
-
-            return new OkObjectResult(responseMessage);
-        }
+        HttpResponseData response = req.CreateResponse(HttpStatusCode.OK);
+        response.Headers.Add("Content-Type", "text/html; charset=utf-8");
+        await response.WriteStringAsync($"<strong>Hello human!</strong> {count} people have said hello to me");
+        return response;
     }
 }

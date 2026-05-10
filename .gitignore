@@ -10,10 +10,15 @@ obj/
 # Hugo output directories
 /public
 /resources/_gen/
+.hugo_build.lock
+/.output/
 
 # Npm
 package-lock.json
 node_modules/
+
+# .NET test output
+TestResults/
 
 # OS Files - Windows
 Thumbs.db
