@@ -1,0 +1,28 @@
+{
+  "name": "bradreimer-web",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Brad Reimer's personal site built with Astro and a light y-astro-scholar-inspired theme",
+  "keywords": [
+    "astro",
+    "template",
+    "portfolio",
+    "personal-site",
+    "astro-theme"
+  ],
+  "license": "MIT",
+  "author": "Brad Reimer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bradreimer/bradreimer-web"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^6.1.9"
+  }
+}

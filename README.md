@@ -6,28 +6,28 @@ Source for the website https://bradreimer.com
 
 ## Stack
 
-- Hugo `0.161.1` (extended) for the static site
-- Git submodule for the `themes/hugo-story` theme
+- Astro `6.x`
+- y-astro-scholar theme as the base visual/layout system
 
 ## Local setup
 
-1. Initialize the theme submodule:
-   `git submodule update --init --recursive`
-2. Install Hugo extended `0.161.1` to match CI.
+1. Install Node.js `22+`
+2. Install dependencies:
+   `npm ci`
 
 ## Build and test
 
 ```bash
-hugo --gc --minify
+npm run build
 ```
 
 ## Deployment
 
-GitHub Actions builds the Hugo site and deploys the static output to Azure Static Web Apps.
+GitHub Actions installs dependencies, builds the Astro site, and deploys `dist/` to Azure Static Web Apps.
 
 ## Dependency maintenance
 
 Dependabot is configured for:
 
 - GitHub Actions
-- Git submodule updates from `.gitmodules`
+- npm dependencies
