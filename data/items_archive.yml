@@ -1,0 +1,19 @@
+title : "Project Archive"
+content: |
+  Older or side projects that still reflect what I enjoy building.
+style: "style1 medium onscroll-fade-in"
+items:
+  - name : "cs-sequence-diagrams"
+    content : "A WPF control that generates UML sequence diagrams from plain text input."
+    style : "style2 major fa-project-diagram"
+    link : "https://github.com/bradreimer/cs-sequence-diagrams"
+
+  - name : "pumpkin-eye"
+    content : "An Arduino project for animated eyeball movement in a Halloween pumpkin build."
+    style : "solid style2 major fa-eye"
+    link : "https://github.com/bradreimer/pumpkin-eye"
+
+  - name : "inkscape_app_icon_generator"
+    content : "An Inkscape extension for generating app icon sizes quickly."
+    style : "solid style2 major fa-icons"
+    link : "https://github.com/bradreimer/inkscape_app_icon_generator"
