@@ -107,6 +107,6 @@ Available tags:
 
 - The Astro server in development mode is configured with `host: true` in `astro.config.mjs`, allowing it to be accessible from outside the container
 - The production container includes a health check that verifies the server is responding
-- Both containers use Node 20 Alpine for a minimal image size
+- The production container uses Node 22.12 Alpine to satisfy Astro's supported Node.js versions
 - GitHub Actions workflow uses BuildKit for efficient layer caching
 - Images are private by default; make the repository public or update package permissions in GitHub to share images
