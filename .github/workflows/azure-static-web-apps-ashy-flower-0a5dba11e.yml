@@ -57,6 +57,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "public" # Built app content directory
           api_location: ".output/api" # Published Azure Functions API
+          config_file_location: "." # Location of staticwebapp.config.json
           output_location: "" # Not used when builds are skipped
           ###### End of Repository/Build Configurations ######
 
