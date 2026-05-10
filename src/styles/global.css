@@ -468,14 +468,16 @@ body:has(.menu-toggle[aria-expanded="true"])::before {
 .custom-list {
     list-style: none;
     padding: 0;
+    margin: 1rem 0 1.25rem;
+    padding-left: 0.75rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.5rem;
 }
 
 .custom-list li {
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.25rem;
 }
 
 .custom-list li::before {
@@ -537,6 +539,7 @@ a.list-item-title:active::after {
     display: block;
     font-size: 0.95rem;
     color: var(--color-text-muted);
+    line-height: 1.45;
 }
 
 .extra-links {
