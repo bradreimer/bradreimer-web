@@ -1,12 +1,10 @@
 # Schnauzers & Software
 
-[![Azure Static Web App CI/CD](https://github.com/bradreimer/bradreimer-web/actions/workflows/azure-static-web-apps-ashy-flower-0a5dba11e.yml/badge.svg)](https://github.com/bradreimer/bradreimer-web/actions/workflows/azure-static-web-apps-ashy-flower-0a5dba11e.yml)
-
 Source for the website https://bradreimer.com
 
 ## Stack
 
-- Astro `6.x`
+- Astro `7.x`
 - y-astro-scholar theme as the base visual/layout system
 
 ## Local setup
@@ -14,6 +12,8 @@ Source for the website https://bradreimer.com
 1. Install Node.js `22+`
 2. Install dependencies:
    `npm ci`
+3. Start local development server:
+   `npm run dev`
 
 ## Build and test
 
@@ -23,7 +23,15 @@ npm run build
 
 ## Deployment
 
-GitHub Actions installs dependencies, builds the Astro site, and deploys `dist/` to Azure Static Web Apps.
+Azure publishing is currently disabled.
+
+To publish locally as a static site with Docker Compose:
+
+```bash
+docker compose up --build -d
+```
+
+The Docker image builds the Astro site and serves it with Nginx at `http://localhost:3000`.
 
 ## Dependency maintenance
 

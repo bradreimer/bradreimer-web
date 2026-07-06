@@ -1,28 +1,16 @@
-version: '3.8'
-
 services:
-  # Development service with live reload
-  dev:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    container_name: bradreimer-web-dev
-    ports:
-      - "4321:4321"
-    volumes:
-      - .:/app
-      - /app/node_modules
-    environment:
-      - NODE_ENV=development
-    command: npm run dev
-
-  # Production service (static site serving)
-  prod:
+  static-site:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: bradreimer-web-prod
+      network: host
+    container_name: bradreimer-web-static
     ports:
-      - "3000:3000"
-    environment:
-      - NODE_ENV=production
+      - "3000:80"
+    networks:
+      - proxy
+    restart: unless-stopped
+
+networks:
+  proxy:
+    external: true

@@ -8,7 +8,8 @@ permissions:
 
 jobs:
   build_and_deploy_job:
-    if: github.event_name == 'workflow_dispatch'
+    # Temporarily disabled; set this back to `github.event_name == 'workflow_dispatch'` to re-enable.
+    if: false
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
